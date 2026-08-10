@@ -1,0 +1,151 @@
+{
+	"Company": [{
+		"currency": "INR",
+		"full_name": "Test User",
+		"company_name": "Wind Power LLP",
+		"timezone": "Asia/Kolkata",
+		"company_abbr": "WP",
+		"industry": "Manufacturing",
+		"country": "India",
+		"language": "English",
+		"company_tagline": "Testing",
+		"email": "test@example.com",
+		"password": "test",
+		"chart_of_accounts": "Standard"
+	}],
+	"Gate Pass Type": [
+		{
+			"doctype": "Gate Pass Type",
+			"gate_pass_type": "Material In",
+			"gate_pass_details": "For incoming materials from suppliers"
+		},
+		{
+			"doctype": "Gate Pass Type",
+			"gate_pass_type": "Material Out",
+			"gate_pass_details": "For outgoing materials to customers or subcontractors"
+		},
+		{
+			"doctype": "Gate Pass Type",
+			"gate_pass_type": "Subcontracting",
+			"gate_pass_details": "For subcontracting material transfers"
+		},
+		{
+			"doctype": "Gate Pass Type",
+			"gate_pass_type": "Internal Transfer",
+			"gate_pass_details": "For internal material transfers between warehouses"
+		}
+	],
+	"Item": [
+		{
+			"doctype": "Item",
+			"item_code": "_Test Gate Entry Item 1",
+			"item_name": "_Test Gate Entry Item 1",
+			"description": "Test item for gate entry module",
+			"item_group": "Products",
+			"stock_uom": "Nos",
+			"is_stock_item": 1,
+			"valuation_rate": 100,
+			"gst_hsn_code": "61149090",
+			"uoms": [
+				{
+					"conversion_factor": 1,
+					"uom": "Nos",
+					"name": "_Test Gate Entry Item 1"
+				}
+			],
+			"item_defaults": [
+				{
+					"name": "_Test Gate Entry Item 1",
+					"company": "Wind Power LLP",
+					"default_warehouse": "Stores - WP",
+					"expense_account": "Cost of Goods Sold - WP",
+					"buying_cost_center": "Main - WP",
+					"selling_cost_center": "Main - WP",
+					"income_account": "Sales - WP"
+				}
+			]
+		},
+		{
+			"doctype": "Item",
+			"item_code": "_Test Gate Entry Item 2",
+			"item_name": "_Test Gate Entry Item 2",
+			"description": "Another test item for gate entry module",
+			"item_group": "Products",
+			"stock_uom": "Nos",
+			"is_stock_item": 1,
+			"valuation_rate": 150,
+			"gst_hsn_code": "61149090",
+			"uoms": [
+				{
+					"conversion_factor": 1,
+					"uom": "Nos",
+					"name": "_Test Gate Entry Item 2"
+				}
+			],
+			"item_defaults": [
+				{
+					"name": "_Test Gate Entry Item 2",
+					"company": "Wind Power LLP",
+					"default_warehouse": "Stores - WP",
+					"expense_account": "Cost of Goods Sold - WP",
+					"buying_cost_center": "Main - WP",
+					"selling_cost_center": "Main - WP",
+					"income_account": "Sales - WP"
+				}
+			]
+		},
+		{
+			"doctype": "Item",
+			"item_code": "_Test Gate Entry Item 3",
+			"item_name": "_Test Gate Entry Item 3",
+			"description": "Test item for finished goods",
+			"item_group": "Products",
+			"stock_uom": "Nos",
+			"is_stock_item": 1,
+			"valuation_rate": 200,
+			"gst_hsn_code": "61149090",
+			"uoms": [
+				{
+					"conversion_factor": 1,
+					"uom": "Nos",
+					"name": "_Test Gate Entry Item 3"
+				}
+			],
+			"item_defaults": [
+				{
+					"name": "_Test Gate Entry Item 3",
+					"company": "Wind Power LLP",
+					"default_warehouse": "Finished Goods - WP",
+					"expense_account": "Cost of Goods Sold - WP",
+					"buying_cost_center": "Main - WP",
+					"selling_cost_center": "Main - WP",
+					"income_account": "Sales - WP"
+				}
+			]
+		}
+	],
+	"Supplier": [
+		{
+			"doctype": "Supplier",
+			"supplier_name": "_Test Gate Entry Supplier",
+			"supplier_group": "All Supplier Groups",
+			"country": "India"
+		},
+		{
+			"doctype": "Supplier",
+			"supplier_name": "_Test Gate Entry Supplier 2",
+			"supplier_group": "All Supplier Groups",
+			"country": "India"
+		}
+	],
+	"Customer": [
+		{
+			"doctype": "Customer",
+			"customer_name": "_Test Gate Entry Customer",
+			"customer_group": "All Customer Groups",
+			"territory": "All Territories",
+			"country": "India"
+		}
+	]
+}
+
